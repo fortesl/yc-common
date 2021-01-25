@@ -1,0 +1,10 @@
+'use strict';
+
+export default function ValidateEmail(email) 
+{
+    if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+        return (true);
+    }
+    return (false);
+}

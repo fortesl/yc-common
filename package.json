@@ -1,0 +1,16 @@
+{
+  "name": "@yocasa/common",
+  "version": "1.0.6",
+  "description": "common methods, no depencies, no imports",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test",
+    "build": "eslint . & npm publish --access public"
+  },
+
+  "devDependencies": {
+    "eslint": "^7.18.0"
+  },
+  "author": "fortesl",
+  "license": "SEE LICENSE IN LICENSE"
+}
