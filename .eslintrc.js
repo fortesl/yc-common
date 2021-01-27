@@ -31,6 +31,8 @@ module.exports = {
     ],
     'globals': {
         'process': true,
-        'window': true
+        'window': true,
+        'expect': true,
+        'test': true
     }
 };

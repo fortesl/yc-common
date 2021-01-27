@@ -14,7 +14,7 @@ export {
     setCookie
 } from './common/browserStorage';
 export {
-    encrypt as stringEncrypt,
-    decrypt as stringDecrypt,
-    reverse as stringReverse
+    stringEncrypt,
+    stringDecrypt,
+    stringReverse
 } from './common/encrypt';

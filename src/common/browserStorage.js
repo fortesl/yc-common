@@ -1,8 +1,9 @@
 'use strict';
+import {stringEncrypt, stringDecrypt} from './encrypt';
 
 export const getLocalStorage = (item) => {
     const json = window.localStorage.getItem(item);
-    return json ? JSON.parse(json) : null;
+    return json ? JSON.parse(stringDecrypt(json)) : null;
 };
 
 export const getSessionStorage = (item) => {
@@ -11,7 +12,7 @@ export const getSessionStorage = (item) => {
 };
 
 export const setLocalStorage = (item, value) => {
-    window.localStorage.setItem(item, JSON.stringify(value));
+    window.localStorage.setItem(item, stringEncrypt(JSON.stringify(value)));
 };
 
 export const setSessionStorage = (item, value) => {
