@@ -1,13 +1,12 @@
 {
   "name": "@yocasa/common",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "common methods, no depencies, no imports",
   "main": "src/index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "lint": "eslint .",
-    "publish": "npm lint & npm test & npm publish --access public"
+    "build": "webpack"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -16,7 +15,9 @@
     "@babel/preset-env": "^7.12.11",
     "babel-jest": "^26.6.3",
     "eslint": "^7.18.0",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
   },
   "author": "fortesl",
   "license": "SEE LICENSE IN LICENSE",

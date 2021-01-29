@@ -1,9 +1,25 @@
 'use strict';
-import {stringEncrypt, stringDecrypt} from './encrypt';
+// import {stringEncrypt, stringDecrypt} from './encrypt';
 
-export const getLocalStorage = (item) => {
+const stringReverse = (string) => {
+    const a = string.split('');
+    a.reverse();
+    return a.join('');
+};
+
+const stringEncrypt = (string) => {
+    return 'z' + stringReverse(string) + 'a';
+};
+
+const stringDecrypt = (string) => {
+    const trim =  string.substring(1, string.length-1);
+    return stringReverse(trim);
+};
+
+
+export const getLocalStorage = (item, decrypt=true) => {
     const json = window.localStorage.getItem(item);
-    return json ? JSON.parse(stringDecrypt(json)) : null;
+    return json ? JSON.parse(decrypt? stringDecrypt(json): json) : null;
 };
 
 export const getSessionStorage = (item) => {
@@ -11,8 +27,8 @@ export const getSessionStorage = (item) => {
     return json ? JSON.parse(json) : null;
 };
 
-export const setLocalStorage = (item, value) => {
-    window.localStorage.setItem(item, stringEncrypt(JSON.stringify(value)));
+export const setLocalStorage = (item, value, encrypt=true) => {
+    window.localStorage.setItem(item, encrypt ? stringEncrypt(JSON.stringify(value)) : JSON.stringify(value));
 };
 
 export const setSessionStorage = (item, value) => {

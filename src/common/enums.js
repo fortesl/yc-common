@@ -1,7 +1,8 @@
 export const reservationStatus = {
     PAID: 'PAID',
     CANCELED: 'CANCELED',
-    SCHEDULED: 'SCHEDULED'
+    SCHEDULED: 'SCHEDULED',
+    PASTDUE: 'PAST DUE'
 };
 
 export const messageTypes = {
