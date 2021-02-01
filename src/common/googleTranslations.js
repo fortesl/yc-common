@@ -19,7 +19,7 @@ export default (text, source, target) => {
             if (response.error) {
                 return text;
             }
-            return response.data.translations[response.data.translations.length-1].translatedText;
+            return response.data.translations[response.data.translations.length-1].translatedText.replace('&#39;', '\'');
         });
     return response;
 };
