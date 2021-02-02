@@ -10,6 +10,8 @@ export {default as refreshBrowser} from './common/refreshBrowser';
 
 export {default as validateEmail} from './common/validate-email';
 
+export {default as localTime} from './common/localizedTime';
+
 export {
     getLocalStorage,
     setLocalStorage,

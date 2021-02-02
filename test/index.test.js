@@ -51,3 +51,7 @@ test('stringDecrypt', () => {
 test('stringReverse', () => {
     expect(typeof index.stringReverse).toBe('function');
 });
+
+test('localTIme', () => {
+    expect(typeof index.localTime).toBe('function');
+});
