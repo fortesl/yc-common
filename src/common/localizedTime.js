@@ -11,7 +11,7 @@ export default (timeStr, localIn) => {
         const hour = hourMinute[0] > 12 ? hourMinute[0] - 12 : hourMinute[0];
         return `${hour}:${hourMinute[1]} ${amPm}`;
     } else {
-        return `${hourMinute[0]}.${hourMinute[1]}`;
+        return `${hourMinute[0]}h${hourMinute[1]}`;
     }
 
 };

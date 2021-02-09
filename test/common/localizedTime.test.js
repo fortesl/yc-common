@@ -12,7 +12,7 @@ test('localTime - pm', () => {
 
 test('localTime - french', () => {
     const str = localTime('18:12', 'fr');
-    expect(str).toBe('18.12');
+    expect(str).toBe('18h12');
 });
 
 
