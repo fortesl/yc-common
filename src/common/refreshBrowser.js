@@ -9,7 +9,7 @@ export const windowRepaint = () => {
     }, 300);
 };
 
-export default () => {
+export default function refreshBrowser() {
     window.scrollTo(0,0);
     window.location.reload();
-};
+}

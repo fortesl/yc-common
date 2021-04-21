@@ -1,4 +1,4 @@
-export default (timeStr, localIn) => {
+export default function localizedTime (timeStr, localIn) {
 
     const local = window.navigator.language.split('-')[0];
 
@@ -14,4 +14,4 @@ export default (timeStr, localIn) => {
         return `${hourMinute[0]}h${hourMinute[1]}`;
     }
 
-};
+}

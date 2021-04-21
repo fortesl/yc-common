@@ -2,7 +2,7 @@
 
 let url = `https://translation.googleapis.com/language/translate/v2?key=${process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY}`;
 
-export default (text, source, target) => {
+export default function googleTranslate (text, source, target) {
     url += '&q=' + encodeURI(text);
     url += `&source=${source}`;
     url += `&target=${target}`;
@@ -22,4 +22,4 @@ export default (text, source, target) => {
             return response.data.translations[response.data.translations.length-1].translatedText.replace('&#39;', '\'');
         });
     return response;
-};
+}

@@ -1,3 +1,5 @@
 'use strict';
 
-export default (price, currency) => (currency === 'CVE') ? price * 100 : price;
+export default function getCurrentPrice (price, currency)  {
+    return currency === 'CVE' ? price * 100 : price;
+}
