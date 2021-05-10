@@ -19,3 +19,12 @@ export const messageTypes = {
     NAVIGATION: 'NAVIGATION',
     NONPAYMENT: 'NONPAYMENT (canceled or errored)'
 };
+
+export const currencySymbols = {
+    USD: '$',
+    CVE: '$',
+    EUR: '€',
+    YEN: '¥',
+    YUAN: '¥',
+    POUND: '£'
+};

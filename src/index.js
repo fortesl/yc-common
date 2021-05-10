@@ -2,7 +2,7 @@
 
 export {default as googleTranslate} from './common/googleTranslations';
 
-export { reservationStatus, messageTypes } from './common/enums';
+export { reservationStatus, messageTypes, currencySymbols } from './common/enums';
     
 export {default as getCurrencyPrice} from './common/getCurrentPrice';
 
