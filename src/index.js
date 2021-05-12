@@ -14,6 +14,8 @@ export {default as localTime} from './common/localizedTime';
 
 export {default as countries} from './common/country-list';
 
+export {default as currencies} from './common/currencies';
+
 export {default as getCountry} from './common/getCountry';
 
 export {
