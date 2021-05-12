@@ -1,6 +1,6 @@
 {
   "name": "@yocasa/common",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "common methods, no depencies, no imports",
   "main": "src/index.js",
   "scripts": {
